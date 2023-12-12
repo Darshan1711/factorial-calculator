@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Factorial Calculator</h1>
+    Enter a non-negative integer : <input type="number" id="f1">
+    <button onclick="fun()">Calculate Factorial</button>
+    <p id="s1"></p>
+
+    <script>
+
+        function fun(){
+        var f1 = parseInt(document.getElementById("f1").value);
+
+        let fac = 1;
+        for(let i=1;i<=f1;i++){
+            fac = i * fac;
+
+            document.getElementById("s1").innerHTML = fac;
+            console.log("fac")
+
+        }
+    }
+    </script>
+    
+</body>
+</html>
